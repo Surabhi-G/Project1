@@ -145,8 +145,7 @@ h2.bio{
     grid-template-rows: 5rem auto;
     grid-template-areas: 
     "place "
-    "fav";
-    
+    "fav";   
 }
 .place{
     grid-area: "place";
@@ -164,7 +163,11 @@ h2.bio{
     grid-template-areas:
     "c-one c-two c-three"
 }
-
+.fav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .col-1{
     grid-area: "c-one";
     background-color: Moccasin;
