@@ -1,0 +1,219 @@
+@import url('blog-header.css');
+@import url('blog-footer.css');
+/* whole page as a grid */
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "head"
+    "about"
+    "foot";
+ }
+ .heading{
+    grid-area: "head";
+ }
+ .about{
+    grid-area: "about";
+ }
+ .last{
+    grid-area: "foot";
+ }
+/* about in grid */
+.about{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "author"
+    "bio";
+}
+.author{
+    grid-area: "author";
+}
+.bio{
+    grid-area: "bio";
+}
+/* author starts */
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.author{
+    display: grid;
+    background-color: Azure;
+    font-family: 'Source Code Pro', monospace;
+    color: coral;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-gap: auto;
+    grid-template-columns: 27rem 54rem;
+    grid-template-rows: 35rem;
+    grid-template-areas: 
+    "left right";
+}
+
+.left{
+    grid-area: "left";
+}
+.right{
+    grid-area: "right";
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* author ends */
+ #photo {
+     width:18rem;
+     height:18rem;
+     border-radius: 9rem;    
+ }
+ h1.name{
+     color: DarkCyan;
+     text-decoration: underline;
+ }
+ #language{
+     color: navy;
+     font-style: bold;
+ }
+ q{
+   font-style: italic; 
+ }
+ /* bio starts */
+ .bio{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 17rem 24rem auto;
+    grid-template-areas: 
+    "r-one"
+    "r-two"
+    "r-three"; 
+ }
+ .row-1{
+     grid-area: "r-one";
+ }
+ .row-2{
+    grid-area: "r-two";
+}
+.row-3{
+    grid-area: "r-three";
+}
+
+.row-1 {
+    display: flex;
+    align-items: left;
+    justify-content: center; 
+    padding-top: 3rem;
+    text-align: left;
+    background-color: pink;
+    font-family: 'Source Code Pro', monospace;
+    color: purple;
+}
+.row-2 {
+    display: flex;
+    align-items: right;
+    justify-content: center; 
+    padding-top: 4rem;
+    text-align: right;
+    background-color: purple;
+    font-family: 'Source Code Pro', monospace;
+    color: pink;
+}
+h2.bio{
+    text-decoration: underline; 
+}
+/* row-3 starts*/
+.row-3{
+    display: grid;
+    background-color: coral;
+    font-family: 'Source Code Pro', monospace;
+    color: Teal;
+    padding: 1rem;
+    grid-gap: auto;
+    grid-template-columns: auto;
+    grid-template-rows: 5rem auto;
+    grid-template-areas: 
+    "place "
+    "fav";
+    
+}
+.place{
+    grid-area: "place";
+    text-align: center;
+}
+.fav{
+    grid-area: "fav";
+}
+.fav{
+    display:grid;
+    padding: 1rem;
+    grid-gap: auto;
+    grid-template-columns: 26rem 26rem 26rem;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "c-one c-two c-three"
+}
+
+.col-1{
+    grid-area: "c-one";
+    background-color: Moccasin;
+}
+.col-2{
+    grid-area: "c-two";
+    background-color: PowderBlue;
+}
+.col-3{
+    grid-area: "c-three";
+    background-color: MistyRose;
+}
+.col-1,
+.col-2,
+.col-3 {
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.col-1 h4,
+.col-2 h4,
+.col-3 h4 {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.col-1 p,
+.col-2 p,
+.col-3 p {
+    font-style: italic;
+    color:DarkMagenta;
+} 
+/* row-3 ends*/
+/*bio ends */
+ @media (max-width:767px){
+    .author{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 21rem 30rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "left right";
+    }
+    .fav{
+        display:grid;
+        padding: 1rem;
+        grid-gap: auto;
+        grid-template-columns: 17rem 17rem 17rem;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "c-one c-two c-three"
+    }
+}

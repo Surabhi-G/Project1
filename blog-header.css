@@ -1,0 +1,52 @@
+@import url('blog-header.css');
+@import url('blog-footer.css');
+@import url('blog-page.css');
+body {
+    font-size: 16px;
+    margin-top: 6rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    line-height: 0.5rem;
+    background-color: black;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+	font-size: 1.5rem;
+    font-weight:800;
+    color: white;
+}
+h1 {
+    font-weight:inherit;
+    color: skyblue;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+li{
+    display: inline-block;
+    margin-right: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+ul a:hover {
+    color: purple;
+}
+
+
+@media screen and (max-width: 1334px)
+{
+    header{
+        width: 84.2rem;
+    }
+}
+
+@media (max-width: 767px){
+    header{
+        width: 55rem;
+    }	
+}

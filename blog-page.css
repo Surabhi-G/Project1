@@ -1,0 +1,152 @@
+@import url('blog-header.css');
+@import url('blog-footer.css');
+
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "head"
+    "content"
+    "foot";
+ }
+ .heading{
+    grid-area: "head";
+ }
+ #all {
+    grid-area: "content";
+ }
+ .last{
+    grid-area: "foot";
+ }
+ .all-continent {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+     "afr"
+     "ame"
+     "asi"
+     "aus"
+     "eur";
+  }
+    
+  #africa{
+     grid-area: "afr";
+  }
+  #america{
+     grid-area: "ame";
+  }
+  #asia{
+     grid-area: "asi";
+  }
+  #australia{
+     grid-area: "aus";
+  }
+  #europe{
+     grid-area: "eur";
+  }
+  
+  .african-countries,
+  .american-countries,
+  .asian-countries,
+  .australian-countries,
+  .european-countries {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .african-countries,
+  .american-countries,
+  .asian-countries,
+  .australian-countries,
+  .european-countries {
+    display:grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-gap: auto;
+    grid-template-columns: 27rem 27rem 27rem;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "one two three"
+    "four five six";
+  }
+  .first{
+     grid-area: "one";
+  }
+  .second{
+     grid-area: "two";
+  }
+  .third{
+     grid-area: "three";
+  }
+  .fourth{
+     grid-area: "four";
+  }
+  .fifth{
+     grid-area: "five";
+  }
+  .sixth{
+     grid-area: "six";
+  }
+ 
+  #card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid white;
+  }
+  #card:hover {
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+  }
+ 
+ div.caption{
+    float: left;
+ }
+ 
+ img {
+     width: 24rem;
+     height: 12rem;
+    border-radius: 10px 10px 0 0;
+  }
+ 
+ .african-countries{
+    background-color: Bisque;
+ }
+ .american-countries{
+    background-color: Aquamarine;
+ }
+ .asian-countries{
+    background-color: Khaki;
+ }
+ .australian-countries{
+    background-color: Thistle;
+ }
+ .european-countries{
+    background-color: Pink;
+ }
+ 
+ @media(max-width : 767px){
+    .african-countries,
+    .american-countries,
+    .asian-countries,
+    .australian-countries,
+    .european-countries {
+    display:grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-columns: 26rem 26rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "one two "
+    "three four"
+    "five six";
+  }
+ }	
+ 
+ 
+
+ 
