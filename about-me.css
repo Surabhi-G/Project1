@@ -35,6 +35,7 @@
     grid-area: "bio";
 }
 /* author starts */
+/* to show it in center */
 .author{
     display: flex;
     align-items: center;

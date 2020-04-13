@@ -1,6 +1,7 @@
-@import url('blog-header.css');
 @import url('blog-footer.css');
-@import url('blog-page.css');
+@import url('home-page.css');
+@import url('about-me.css');
+
 body {
     font-size: 16px;
     margin-top: 6rem;
