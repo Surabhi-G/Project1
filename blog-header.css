@@ -2,6 +2,7 @@
 @import url('home-page.css');
 @import url('about-me.css');
 
+/* header specifications for whole blog */
 body {
     font-size: 16px;
     margin-top: 6rem;
@@ -29,7 +30,7 @@ h1 {
     font-size: 2rem;
     margin-right: 2rem;
 }
-li{
+li {
     display: inline-block;
     margin-right: 1rem;
     font-family: 'Dancing Script', cursive;
@@ -39,15 +40,14 @@ ul a:hover {
 }
 
 
-@media screen and (max-width: 1334px)
-{
-    header{
+@media screen and (max-width: 1334px) {
+    header {
         width: 84.2rem;
     }
 }
 
-@media (max-width: 767px){
-    header{
+@media (max-width: 767px) {
+    header {
         width: 55rem;
     }	
 }

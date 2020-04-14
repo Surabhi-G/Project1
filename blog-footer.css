@@ -9,7 +9,8 @@
     padding-top: 1em;
     font-family: 'Dancing Script', cursive;
 }
-.last{
+/* footer as grid */
+.last {
     display: grid;
     grid-template-columns: 58% 38%;
     grid-template-rows: auto;
@@ -19,20 +20,20 @@
 .last ul {
     margin-left: -2em;
 }
-.last ul a:hover{
+.last ul a:hover {
     color: coral;
 }
-.last-one{
+.last-one {
     grid-area: "last-one";
     padding-left: 1.5rem;
 }
-.last-two{
+.last-two {
     grid-area: "last-two";
 }
- .button:hover{
+ .button:hover {
     background-color: coral;
  }
- input{
+ input {
      border-radius: 0.3rem;
  }
  i {

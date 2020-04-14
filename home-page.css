@@ -1,7 +1,7 @@
 @import url('blog-header.css');
 @import url('blog-footer.css');
-
-.wrapper{
+/*whole page as grid */
+.wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -10,15 +10,16 @@
     "content"
     "foot";
  }
- .heading{
+ .heading {
     grid-area: "head";
  }
  #all {
     grid-area: "content";
  }
- .last{
+ .last {
     grid-area: "foot";
  }
+ /* grid for content*/
  .all-continent {
     display:grid;
     grid-template-columns: auto;
@@ -31,22 +32,22 @@
      "eur";
   }
     
-  #africa{
+  #africa {
      grid-area: "afr";
   }
-  #america{
+  #america {
      grid-area: "ame";
   }
-  #asia{
+  #asia {
      grid-area: "asi";
   }
-  #australia{
+  #australia {
      grid-area: "aus";
   }
-  #europe{
+  #europe {
      grid-area: "eur";
   }
-  
+  /* countries in flex to keep them in center */
   .african-countries,
   .american-countries,
   .asian-countries,
@@ -71,25 +72,25 @@
     "one two three"
     "four five six";
   }
-  .first{
+  .first {
      grid-area: "one";
   }
-  .second{
+  .second {
      grid-area: "two";
   }
-  .third{
+  .third {
      grid-area: "three";
   }
-  .fourth{
+  .fourth {
      grid-area: "four";
   }
-  .fifth{
+  .fifth {
      grid-area: "five";
   }
-  .sixth{
+  .sixth {
      grid-area: "six";
   }
- 
+ /* for each card to be in center and some space */
   #card {
     display: flex;
     align-items: center;
@@ -103,7 +104,7 @@
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
   }
  
- div.caption{
+ div.caption {
     float: left;
  }
  
@@ -112,24 +113,25 @@
      height: 12rem;
     border-radius: 10px 10px 0 0;
   }
- 
- .african-countries{
+ /* back ground color for each continent */
+ .african-countries {
     background-color: Bisque;
  }
- .american-countries{
+ .american-countries {
     background-color: Aquamarine;
  }
- .asian-countries{
+ .asian-countries {
     background-color: Khaki;
  }
- .australian-countries{
+ .australian-countries {
     background-color: Thistle;
  }
- .european-countries{
+ .european-countries {
     background-color: Pink;
  }
  
- @media(max-width : 767px){
+ /* media query for screen less than 767px */
+ @media(max-width : 767px) {
     .african-countries,
     .american-countries,
     .asian-countries,

@@ -1,7 +1,8 @@
 @import url('blog-header.css');
 @import url('blog-footer.css');
+
 /* whole page as a grid */
-.container{
+.container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -10,17 +11,17 @@
     "about"
     "foot";
  }
- .heading{
+ .heading {
     grid-area: "head";
  }
- .about{
+ .about {
     grid-area: "about";
  }
- .last{
+ .last {
     grid-area: "foot";
  }
 /* about in grid */
-.about{
+.about {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -28,21 +29,21 @@
     "author"
     "bio";
 }
-.author{
+.author {
     grid-area: "author";
 }
-.bio{
+.bio {
     grid-area: "bio";
 }
 /* author starts */
 /* to show it in center */
-.author{
+.author {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.author{
+.author {
     display: grid;
     background-color: Azure;
     font-family: 'Source Code Pro', monospace;
@@ -56,19 +57,19 @@
     "left right";
 }
 
-.left{
+.left {
     grid-area: "left";
 }
-.right{
+.right {
     grid-area: "right";
 }
 
-.left{
+.left {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.right{
+.right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,19 +81,19 @@
      height:18rem;
      border-radius: 9rem;    
  }
- h1.name{
+ h1.name {
      color: DarkCyan;
      text-decoration: underline;
  }
- #language{
+ #language {
      color: navy;
      font-style: bold;
  }
- q{
+ q {
    font-style: italic; 
  }
  /* bio starts */
- .bio{
+ .bio {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 17rem 24rem auto;
@@ -101,13 +102,13 @@
     "r-two"
     "r-three"; 
  }
- .row-1{
+ .row-1 {
      grid-area: "r-one";
  }
- .row-2{
+ .row-2 {
     grid-area: "r-two";
 }
-.row-3{
+.row-3 {
     grid-area: "r-three";
 }
 
@@ -131,11 +132,11 @@
     font-family: 'Source Code Pro', monospace;
     color: pink;
 }
-h2.bio{
+h2.bio {
     text-decoration: underline; 
 }
 /* row-3 starts*/
-.row-3{
+.row-3 {
     display: grid;
     background-color: coral;
     font-family: 'Source Code Pro', monospace;
@@ -148,14 +149,14 @@ h2.bio{
     "place "
     "fav";   
 }
-.place{
+.place {
     grid-area: "place";
     text-align: center;
 }
-.fav{
+.fav {
     grid-area: "fav";
 }
-.fav{
+.fav {
     display:grid;
     padding: 1rem;
     grid-gap: auto;
@@ -164,20 +165,20 @@ h2.bio{
     grid-template-areas:
     "c-one c-two c-three"
 }
-.fav{
+.fav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.col-1{
+.col-1 {
     grid-area: "c-one";
     background-color: Moccasin;
 }
-.col-2{
+.col-2 {
     grid-area: "c-two";
     background-color: PowderBlue;
 }
-.col-3{
+.col-3 {
     grid-area: "c-three";
     background-color: MistyRose;
 }
@@ -202,8 +203,9 @@ h2.bio{
 } 
 /* row-3 ends*/
 /*bio ends */
- @media (max-width:767px){
-    .author{
+/* media Query for screen less than 767px */
+ @media (max-width:767px) {
+    .author {
     display: grid;
     padding: 1rem;
     grid-template-columns: 21rem 30rem;
@@ -211,7 +213,7 @@ h2.bio{
     grid-template-areas: 
     "left right";
     }
-    .fav{
+    .fav {
         display:grid;
         padding: 1rem;
         grid-gap: auto;
