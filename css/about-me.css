@@ -1,5 +1,5 @@
-@import url('blog-header.css');
-@import url('blog-footer.css');
+@import url('css/blog-header.css');
+@import url('css/blog-footer.css');
 
 /* whole page as a grid */
 .container {

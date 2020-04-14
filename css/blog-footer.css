@@ -1,6 +1,6 @@
-@import url('home-page.css');
-@import url('about-me.css');
-@import url('blog-header.css');
+@import url('css/home-page.css');
+@import url('css/about-me.css');
+@import url('css/blog-header.css');
 
 .last {
     background-color: black;
