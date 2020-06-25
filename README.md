@@ -5,8 +5,11 @@ This project requires you to utilize your HTML and CSS skills to build out a per
 This project is a personal tavel blog website. It has been designed using css Flex and Grid.
 
 Project Files
+
 This project includes HTML files related to:
 
 The blog website
+
 A blog post
+
 as well as related CSS files for styling.
